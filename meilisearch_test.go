@@ -1985,7 +1985,7 @@ func TestClient_MultiSearch(t *testing.T) {
 			args: args{
 				client: sv,
 				queries: &MultiSearchRequest{
-					[]*SearchRequest{
+					Queries: []*SearchRequest{
 						{
 							IndexUID: "TestClientMultiSearchOneIndex",
 							Query:    "wonder",
@@ -2017,7 +2017,7 @@ func TestClient_MultiSearch(t *testing.T) {
 			args: args{
 				client: sv,
 				queries: &MultiSearchRequest{
-					[]*SearchRequest{
+					Queries: []*SearchRequest{
 						{
 							IndexUID: "TestClientMultiSearchOnTwoIndexes1",
 							Query:    "wonder",
@@ -2070,7 +2070,7 @@ func TestClient_MultiSearch(t *testing.T) {
 			args: args{
 				client: sv,
 				queries: &MultiSearchRequest{
-					[]*SearchRequest{
+					Queries: []*SearchRequest{
 						{
 							Query: "",
 						},
